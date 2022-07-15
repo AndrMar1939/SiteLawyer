@@ -1,0 +1,360 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+/* стилі сайту */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+/* шрифт */
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+h3 {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.7rem;
+  font-style: italic;
+  text-align: center;
+}
+p {
+  text-align: left;
+}
+.wrapper {
+  max-width: 1140px;
+  padding: 1rem 3rem 2rem 2rem;
+  margin: auto;
+}
+.best-info {
+  background-color: black;
+  background-image: url(../img/img4.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.best-info-raw {
+  color: #ffff;
+  width: 50%;
+  padding: 2rem;
+}
+
+@media (max-width: 960px) {
+  .best-info {
+    background-color: #090908;
+    background-image: url(../img/img4.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 63%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+  }
+  .best-info-raw {
+    color: #ffff;
+    width: 50%;
+    padding: 2rem;
+    font-size: smaller;
+  }
+  .raw_item_one {
+    flex: 0 0 40%;
+  }
+  .raw_item_two {
+    flex: 0 0 60%;
+  }
+  .about-me-raw-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-foto {
+    background-color: #090908;
+    flex: 1 0 40%;
+  }
+  /* .me-foto {
+    width: 100%;
+    flex: 1 1 50%;
+  } */
+  .about-me-text {
+    color: aliceblue;
+    background: #090908;
+    padding: 2rem;
+    flex: 1 1 60%;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .best-info {
+    background-color: #090908;
+    background-image: url(../img/img4.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70%;
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+  }
+  .best-info-raw {
+    color: #ffff;
+    width: 50%;
+    padding: 2rem;
+    font-size: smaller;
+  }
+  .raw {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .raw_item_one {
+    flex: 1 1 20%;
+  }
+  .raw_item_two {
+    flex: 1 1 80%;
+  }
+  .my-map-img {
+    display: block;
+    width: 0px;
+  }
+  .my-map {
+    display: none;
+  }
+  .links-benefits {
+    background-color: #090908;
+    color: aliceblue;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 5px;
+  }
+  .links-benefits-list li {
+    line-height: 5px;
+  }
+}
+@media (max-width: 590px) {
+  .best-info {
+    background-color: #090908;
+    background-image: url(../img/img4.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 90%;
+    max-height: 390px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .best-info-raw {
+    color: #ffff;
+    width: 100%;
+    padding: 7rem 2rem;
+    font-size: smaller;
+  }
+}
+@media (max-width: 500px) {
+  .best-info {
+    background-color: #090908;
+    background-image: url(../img/img4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    max-height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .best-info-raw {
+    color: #ffff;
+    width: 100%;
+    padding: 6.5rem 1rem 6rem 1rem;
+    font-size: smaller;
+  }
+}
+.my-servises {
+  background-color: #090908;
+  color: aliceblue;
+  margin-bottom: 2rem;
+}
+
+.my-servises-name {
+  text-align: center;
+  padding-top: 2rem;
+}
+.raw {
+  display: flex;
+}
+.raw_item_one {
+  flex: 0 0 40%;
+}
+.raw_item_two {
+  flex: 1 1 60%;
+}
+
+.column_item {
+  padding: 1rem;
+  background-color: #090908;
+  margin-right: 5px;
+  min-height: 400px;
+}
+.column_item h3 {
+  text-align: center;
+}
+
+.about-me-raw-one {
+  display: flex;
+  align-items: center;
+}
+.about-me {
+  background-color: #090908;
+  margin-bottom: 2rem;
+}
+.about-me-foto {
+  padding: 1rem;
+  background-color: #090908;
+}
+.me-foto {
+  width: 100%;
+  flex: 0 0 30%;
+}
+.about-me-text {
+  color: aliceblue;
+  background: #090908;
+  padding: 2rem;
+  flex: 0 0 70%;
+  text-align: center;
+}
+.my-prices {
+  background-color: #090908;
+  color: aliceblue;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.my-prices h2 {
+  text-align: center;
+}
+.price-link {
+  color: aliceblue;
+  text-decoration-line: underline;
+  font-size: larger;
+}
+.contacts {
+  background-color: #090908;
+  color: aliceblue;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.my-map-img {
+  display: block;
+  width: 100%;
+}
+.links-benefits {
+  background-color: #090908;
+  color: aliceblue;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.links-benefits-list {
+  color: aliceblue;
+}
+.links-benefits-list h3 {
+  font-style: italic;
+  text-align: center;
+}
+.links-benefits-list h2 {
+  text-align: center;
+}
+.links-benefits-list li {
+  line-height: 3rem;
+}
